@@ -1,4 +1,6 @@
-<b>The project is still under development</b>
+The project is still under development
+
+=========================================================
 
 To run the application:
 
