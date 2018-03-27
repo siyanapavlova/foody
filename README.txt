@@ -1,3 +1,5 @@
+<b>The project is still under development</b>
+
 To run the application:
 
 You need to have Python 2.7 installed
