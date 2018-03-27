@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css"></link>
+    <link rel="stylesheet" href="static/style.css"></link>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="/static/message.js" charset="utf-8"></script>
+  </head>
+  <body>
+      <div class="col-sm-3 col-sm-offset-4 frame">
+          <ul></ul>
+          <div>
+              <div class="msj-rta macro" style="margin:auto">
+                  <div class="text text-r" style="background:whitesmoke !important">
+                      {% for m in message_list %}
+                        <script>insertChat('{{ m.sender }}', '{{ m.message }}')</script>
+                      {% endfor %}
+                      <form action="" method="post" name="my">
+                          <input name="mytext" class="mytext" placeholder="Type a message"/>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
